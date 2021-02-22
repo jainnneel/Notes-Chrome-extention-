@@ -2,9 +2,9 @@
 // alert("dsadsa neel jain")
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDBARQkJXCiELqwdaq6wAEiJ1SJdKyLpDQ",
+    apiKey: "XXXXXXXX",
     authDomain: "badget-7d2e5.firebaseapp.com",
-    databaseURL: "https://badget-7d2e5-default-rtdb.firebaseio.com",
+    databaseURL: "XXXXXXXX",
     projectId: "badget-7d2e5",
     storageBucket: "badget-7d2e5.appspot.com",
     messagingSenderId: "388376641692",
