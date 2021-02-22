@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Store it!!</title>
+        <style>
+             html, body{
+      height:100%;
+      min-width:100%;
+      margin:0;
+      padding:0;
+      font-size:100%;
+    }
+    h1{
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 900;
+    }
+    body{
+      background: #f7fafc;
+      color: #4a5568;
+    }
+    body.dark{
+      color: #f7fafc;
+      background:#4a5568;
+    }
+    .newnote{
+        cursor: pointer;
+    }
+    .pages_holder{
+        cursor:pointer;
+    }
+    div.main{
+      display:flex;
+      height:100%;
+    }
+    aside.sidebar{
+      width:200px;
+      background:#edf2f7;
+      height:100%;
+      padding:25px;
+    }
+    .dark aside.sidebar{
+      background:#718096;
+    }
+    section.holder{
+      width: 500px;
+      height:400px;
+      padding:25px;
+    }
+    div.icon{
+      height:30px;
+      width:30px;
+      line-height:30px;
+      font-size:28px;
+    }
+    .holder div.icon{
+      cursor:pointer;
+    }
+
+    [contenteditable]:focus{
+        outline: 0px solid transparent;
+    }
+    [placeholder]:empty:before{
+        content: attr(placeholder);
+    }
+    .deletepage{
+        margin-right: 10px;
+    }
+    .savepage,.deletepage{
+        float: right;
+        background-color: darkorchid;
+        padding: 10px 20px;
+        border: 1px solid transparent;
+        color: white;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+    .active{
+        background-color: rgba(71, 161, 10, 0.253);
+    }
+    .text{
+        cursor: text;
+    }
+    .hidden{
+        display: none;
+    }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <aside class="sidebar">
+                <div class="icon">Note</div>
+                <br>
+                <br>
+                <div class="newnote"><h3><b> Add Note+ </b></h3></div>
+                <div class="pages_holder"></div>
+            </aside>
+           
+            <section class="holder">
+                  
+              <h2>Just Note it!!</h2>
+                <div class="action">
+                    <button class="savepage">Save</button>
+                    <button class="deletepage">Delete</button>
+                </div>
+                <br>
+                <br>
+                
+               <div class="text">
+                <h1  contenteditable="true" placeholder="Untitle" ></h1>
+                <div class="post_body" contenteditable="true" placeholder="Write here..."  ></div>
+               </div>
+            </section>
+
+        </div>
+        <script src="app.js" ></script>
+    </body>
+</html>
